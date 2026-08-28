@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Emoji Translator 🔤➡️😀</h1>
+
+    <label for="input-text">Enter text</label>
+    <textarea id="input-text" rows="5" placeholder="Type something, e.g. I love pizza and coffee"></textarea>
+
+    <div class="actions">
+      <button id="translate-btn" type="button">Translate</button>
+      <button id="clear-btn" type="button">Clear</button>
+    </div>
+
+    <p id="warning" class="warning" hidden>Please enter some new text before translating.</p>
+
+    <label for="output-text">Translated text</label>
+    <textarea id="output-text" rows="5" readonly placeholder="Your emoji translation will appear here"></textarea>
+  </main>
+
+  <script src="emoji-dictionary.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
